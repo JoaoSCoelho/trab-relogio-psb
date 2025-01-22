@@ -1,0 +1,25 @@
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Seven Segment" CircId="Seven Segment-2" mainComp="false" Show_id="false" Show_Val="false" Pos="180,-60" rotation="0" hflip="1" vflip="1" label="Seven Segment-2" idLabPos="20,-44" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" NumDisplays="1" Vertical_Pins="false" CommonCathode="true" Threshold="2.4 V" MaxCurrent="20 mA" Resistance="1 Ω" />
+
+<item itemtype="MCU" CircId="mega328-3" mainComp="false" Show_id="true" Show_Val="false" Pos="4,-104" rotation="0" hflip="1" vflip="1" label="mega328-3" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" Clk_Out="false" MainMcu="true" SerialMon="-1" />
+
+<item itemtype="Ground" CircId="Ground-4" mainComp="false" Show_id="false" Show_Val="false" Pos="188,4" rotation="0" hflip="1" vflip="1" label="Ground-4" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Connector" uid="Connector-1" startpinid="mega328-3-PORTC0" endpinid="Seven Segment-2-pin_a" pointList="44,-56,148,-56,148,-84,156,-84" />
+
+<item itemtype="Connector" uid="Connector-2" startpinid="mega328-3-PORTC1" endpinid="Seven Segment-2-pin_b" pointList="44,-64,140,-64,140,-76,156,-76" />
+
+<item itemtype="Connector" uid="Connector-3" startpinid="mega328-3-PORTC2" endpinid="Seven Segment-2-pin_c" pointList="44,-72,132,-72,132,-68,156,-68" />
+
+<item itemtype="Connector" uid="Connector-4" startpinid="mega328-3-PORTC3" endpinid="Seven Segment-2-pin_d" pointList="44,-80,124,-80,124,-60,156,-60" />
+
+<item itemtype="Connector" uid="Connector-5" startpinid="mega328-3-PORTC4" endpinid="Seven Segment-2-pin_e" pointList="44,-88,116,-88,116,-52,156,-52" />
+
+<item itemtype="Connector" uid="Connector-6" startpinid="mega328-3-PORTC5" endpinid="Seven Segment-2-pin_f" pointList="44,-96,108,-96,108,-44,156,-44" />
+
+<item itemtype="Connector" uid="Connector-9" startpinid="mega328-3-PORTC6" endpinid="Seven Segment-2-pin_g" pointList="-4,-96,-12,-96,-12,-108,100,-108,100,-36,156,-36" />
+
+<item itemtype="Connector" uid="Connector-10" startpinid="Seven Segment-2-pin_commona" endpinid="Ground-4-Gnd" pointList="188,-28,188,-12" />
+
+</circuit>
