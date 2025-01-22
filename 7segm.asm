@@ -23,39 +23,64 @@ converter_r31:
 mostrar_zero:
     ldi r17, 0x3f
     out portc, r17
+    rcall delay
 
 mostrar_um:
     ldi r17, 0x06
     out portc, r17
+    rcall delay
 
 mostrar_dois:
     ldi r17, 0x5b
     out portc, r17
+    rcall delay
 
 mostrar_tres:
     ldi r17, 0x4f
     out portc, r17
-    
+    rcall delay
+
 mostrar_quatro:
     ldi r17, 0x66
     out portc, r17
+    rcall delay
 
 mostrar_cinco:
     ldi r17, 0x6d
     out portc, r17
+    rcall delay
 
 mostrar_seis:
     ldi r17, 0x7d
     out portc, r17
+    rcall delay
 
 mostrar_sete:
     ldi r17, 0x07
     out portc, r17
+    rcall delay
 
 mostrar_oito:
     ldi r17, 0x7f
     out portc, r17
+    rcall delay
 
 mostrar_nove:
     ldi r17, 0x6f
     out portc, r17
+    rcall delay
+    
+delay:
+	ldi r21, 100          	
+delay1:
+	ldi r22, 120
+delay2:
+	ldi r23, 200
+delay3:
+	dec r23
+	brne delay3
+	dec r22
+	brne delay2
+	dec r21
+	brne delay1
+	RET
