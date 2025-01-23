@@ -6,6 +6,7 @@ rjmp reset
 reset:
     ldi r16, 0xff
     out ddrc, r16
+    rjmp main
 
 main:
     ldi r31, 0
@@ -13,6 +14,8 @@ main:
     ldi r29, 0
 
 loop:
+    rcall converter_r28
+    rcall delay
     inc r31
     breq inc_r30
     cpi r31, 128
@@ -37,3 +40,4 @@ verifica_r29:
     breq main
 
 .INCLUDE "7segm.asm"
+.INCLUDE "delay.asm"
