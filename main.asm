@@ -4,6 +4,8 @@
 horas: .byte 1
 minutos: .byte 1
 segundos: .byte 1
+dezena: .byte 1
+unidade: .byte 1
 
 .cseg
 
@@ -21,10 +23,7 @@ main:
     ldi r29, 0
 
 loop:
-    rcall extrator_minuto
-    mov r28, r24
-    rcall converter_r28
-    rcall delay
+    rcall mostrar_min_e_seg
     inc r31
     breq inc_r30
     cpi r31, 128
@@ -51,3 +50,5 @@ verifica_r29:
 .INCLUDE "7segm.asm"
 .INCLUDE "delay.asm"
 .INCLUDE "extrator.asm"
+.INCLUDE "dividiremdoisnegocios.asm"
+.INCLUDE "jogarpro7segm.asm"

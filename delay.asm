@@ -1,9 +1,12 @@
 delay:
-	ldi r21, 100          	
+	ldi r21, 1      
+
 delay1:
 	ldi r22, 120
+
 delay2:
 	ldi r23, 200
+
 delay3:
 	dec r23
 	brne delay3
