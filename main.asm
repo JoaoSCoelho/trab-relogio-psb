@@ -9,13 +9,16 @@ reset:
     rjmp main
 
 main:
-    ldi r31, 0
-    ldi r30, 0
+    ldi r31, 0b00011100
+    ldi r30, 0b00000010
     ldi r29, 0
 
 loop:
+    rcall extrator_hora
+    mov r28, r24
     rcall converter_r28
     rcall delay
+    
     inc r31
     breq inc_r30
     cpi r31, 128
