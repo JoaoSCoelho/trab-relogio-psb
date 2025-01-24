@@ -1,5 +1,12 @@
 .INCLUDE "m328Pdef.inc"
 
+.dseg
+horas: .byte 1
+minutos: .byte 1
+segundos: .byte 1
+
+.cseg
+
 .org 0x00 
 rjmp reset
 
@@ -14,6 +21,8 @@ main:
     ldi r29, 0
 
 loop:
+    rcall extrator_minuto
+    mov r28, r24
     rcall converter_r28
     rcall delay
     inc r31
@@ -41,3 +50,4 @@ verifica_r29:
 
 .INCLUDE "7segm.asm"
 .INCLUDE "delay.asm"
+.INCLUDE "extrator.asm"

@@ -72,19 +72,5 @@ mostrar_nove:
 
 extratordehora:
 
-extrator:
-    clr r24
-    mov r20,r29
-    mov r21,r30
-    mov r22,r31
-
-extrator_loop:
-    subi r22, 60
-    inc r24
-    brmi dec_r21
-
-dec_r21:
-    dec r21
-    add 
 
     
