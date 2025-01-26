@@ -5,6 +5,7 @@ dividir_algarismos_loop:
     subi r28, 10
     inc r19
     brcs return_dividir_algarismos
+    rjmp dividir_algarismos_loop
 
 return_dividir_algarismos:
     dec r19
