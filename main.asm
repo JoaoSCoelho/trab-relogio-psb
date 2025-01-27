@@ -1,11 +1,21 @@
 .INCLUDE "m328Pdef.inc"
 
+.dseg
+horas: .byte 1
+minutos: .byte 1
+segundos: .byte 1
+dezena: .byte 1
+unidade: .byte 1
+
+.cseg
+
 .org 0x00 
 rjmp reset
 
 reset:
     ldi r16, 0xff
     out ddrc, r16
+    out ddrb, r16
     rjmp main
 
 main:
@@ -14,11 +24,7 @@ main:
     ldi r29, 0
 
 loop:
-    rcall extrator_hora
-    mov r28, r24
-    rcall converter_r28
-    rcall delay
-    
+    rcall mostrar_min_e_seg
     inc r31
     breq inc_r30
     cpi r31, 128
@@ -37,10 +43,15 @@ inc_r29:
 verifica_r30:
     cpi r30, 81
     breq verifica_r29
+    rjmp loop
 
 verifica_r29:
     cpi r29, 1
     breq main
+    rjmp loop
 
 .INCLUDE "7segm.asm"
 .INCLUDE "delay.asm"
+.INCLUDE "extrator.asm"
+.INCLUDE "dividiremdoisnegocios.asm"
+.INCLUDE "jogarpro7segm.asm"
