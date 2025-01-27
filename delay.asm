@@ -2,7 +2,7 @@ delay:
 	ldi r21, 1      
 
 delay1:
-	ldi r22, 120
+	ldi r22, 80
 
 delay2:
 	ldi r23, 200
