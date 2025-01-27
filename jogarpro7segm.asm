@@ -1,12 +1,19 @@
 mostrar_min_e_seg:
-    ldi r18, 80
+    ldi r18, 100
 
 mostrar_min_e_seg_loop:
     rcall extrator ; seta nas variáveis horas, minutos e segundos, valores de 0-24 e 0-60 respectivamente
+    lds r26, mostrar_horas_e_minutos
+    sbrs r26, 0
     lds r28, minutos
+    sbrc r26, 0
+    lds r28, horas
     ldi r20, 0x00  ; r20 é booleano, se 0 mostrar os dois displays da esquerda, se 1 mostrar os dois da direita
     rcall pensar_smart
+    sbrs r26, 0
     lds r28, segundos
+    sbrc r26, 0
+    lds r28, minutos
     ldi r20, 0x01
     rcall pensar_smart
     dec r18
