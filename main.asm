@@ -19,8 +19,8 @@ reset:
     rjmp main
 
 main:
-    ldi r31, 0
-    ldi r30, 0
+    ldi r31, 0b00011100
+    ldi r30, 0b00000010
     ldi r29, 0
 
 loop:

@@ -69,3 +69,5 @@ mostrar_nove:
     ldi r17, 0x6f
     out portc, r17
     RET
+
+   
