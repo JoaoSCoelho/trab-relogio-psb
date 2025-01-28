@@ -2,7 +2,7 @@
 
 <item itemtype="Seven Segment" CircId="Seven Segment-2" mainComp="false" Show_id="false" Show_Val="false" Pos="180,-60" rotation="0" hflip="1" vflip="1" label="Seven Segment-2" idLabPos="20,-44" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Purple" NumDisplays="4" Vertical_Pins="false" CommonCathode="true" Threshold="2.4 V" MaxCurrent="8 mA" Resistance="1 Ω" />
 
-<item itemtype="MCU" CircId="mega328-3" mainComp="false" Show_id="true" Show_Val="false" Pos="4,-104" rotation="0" hflip="1" vflip="1" label="mega328-3" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 THz" Program="main.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" Clk_Out="false" varList="R19,,R28,R31,R30,R29,0x0105,0x01b,PCIFR,EIFR,0x106" MainMcu="true" SerialMon="-1" />
+<item itemtype="MCU" CircId="mega328-3" mainComp="false" Show_id="true" Show_Val="false" Pos="4,-104" rotation="0" hflip="1" vflip="1" label="mega328-3" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="main.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" Clk_Out="false" varList="R19,,R28,R31,R30,R29,0x0105,0x01b,PCIFR,EIFR,0x106" MainMcu="true" SerialMon="-1" />
 
 <item itemtype="Resistor" CircId="Resistor-5" mainComp="false" Show_id="false" Show_Val="false" Pos="124,-84" rotation="0" hflip="1" vflip="1" label="Resistor-5" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
 
