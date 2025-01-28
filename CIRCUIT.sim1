@@ -24,7 +24,11 @@
 
 <item itemtype="Ground" CircId="Ground-14" mainComp="false" Show_id="false" Show_Val="false" Pos="-112,48" rotation="0" hflip="1" vflip="1" label="Ground-14" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
 
-<item itemtype="LedBar" CircId="LedBar-16" mainComp="false" Show_id="false" Show_Val="false" Pos="324,-44" rotation="-90" hflip="1" vflip="1" label="LedBar-16" idLabPos="-16,-44" labelrot="0" valLabPos="-16,-56" valLabRot="0" Color="Yellow" Size="2 _Leds" Grounded="true" Threshold="2.4 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+<item itemtype="LedBar" CircId="LedBar-16" mainComp="false" Show_id="false" Show_Val="false" Pos="380,-48" rotation="-90" hflip="1" vflip="1" label="LedBar-16" idLabPos="-16,-44" labelrot="0" valLabPos="-16,-56" valLabRot="0" Color="Yellow" Size="2 _Leds" Grounded="true" Threshold="2.4 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+
+<item itemtype="TextComponent" CircId="TextComponent-17" mainComp="false" Show_id="false" Show_Val="false" Pos="372,-56" rotation="0" hflip="1" vflip="1" label="TextComponent-17" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="0 _px" Border="0 _px" Color="#000000" Opacity="1" Font="Helvetica [Cronyx]" Font_Color="#ffffff" Font_Size="6 _px" Fixed_Width="false" Text="HH:MM" />
+
+<item itemtype="TextComponent" CircId="TextComponent-18" mainComp="false" Show_id="false" Show_Val="false" Pos="296,-56" rotation="0" hflip="1" vflip="1" label="TextComponent-18" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="0 _px" Border="0 _px" Color="#000000" Opacity="1" Font="Helvetica [Cronyx]" Font_Color="#ffffff" Font_Size="6 _px" Fixed_Width="false" Text="TEMPORIZADOR" />
 
 <item itemtype="Node" CircId="Node-15" mainComp="false" Pos="-112,-44" />
 
@@ -74,8 +78,8 @@
 
 <item itemtype="Connector" uid="Connector-42" startpinid="Node-15-2" endpinid="Ground-14-Gnd" pointList="-112,-44,-112,32" />
 
-<item itemtype="Connector" uid="Connector-49" startpinid="LedBar-16-led0-pinP" endpinid="mega328-3-PORTD7" pointList="300,-28,300,24,-20,24,-20,0,-4,0" />
+<item itemtype="Connector" uid="Connector-49" startpinid="LedBar-16-led0-pinP" endpinid="mega328-3-PORTD7" pointList="356,-32,356,24,-20,24,-20,0,-4,0" />
 
-<item itemtype="Connector" uid="Connector-50" startpinid="LedBar-16-led1-pinP" endpinid="mega328-3-PORTD6" pointList="308,-28,308,28,-28,28,-28,-8,-4,-8" />
+<item itemtype="Connector" uid="Connector-50" startpinid="LedBar-16-led1-pinP" endpinid="mega328-3-PORTD6" pointList="364,-32,364,28,-28,28,-28,-8,-4,-8" />
 
 </circuit>
