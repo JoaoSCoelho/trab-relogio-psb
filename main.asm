@@ -62,7 +62,7 @@ main:
     ldi r29, 0 ; mais significativo
 
 loop: ; loop de contagem de segundos
-    rcall mostrar_min_e_seg ; mostra os minutos e os segundos por um período de 1s
+    rcall mostrador ; mostra o horario por um período de 1s
 
     lds r26, temporizador ; verifica se o temporizador está ativado
     sbrc r26, 0

@@ -1,7 +1,7 @@
-mostrar_min_e_seg: ; mostra os minutos e os segundos ou horas e os minutos por 1s nos 4 displays 
+mostrador: ; mostra os minutos e os segundos ou horas e os minutos por 1s nos 4 displays 
     ldi r18, 100    ; loop de 100 vezes
 
-mostrar_min_e_seg_loop:
+mostrador_loop:
     rcall extrator ; seta nas variáveis horas, minutos e segundos, valores de 0-23 e 0-59 respectivamente
     lds r26, mostrar_horas_e_minutos ; carrega da memória em r26
     ; se r26 (mostrar_horas_e_minutos) for 0, nos displays da esquerda, mostra os minutos, se for 1, mostra as horas
@@ -22,7 +22,7 @@ mostrar_min_e_seg_loop:
 
     ; verificação do loop
     dec r18
-    brne mostrar_min_e_seg_loop
+    brne mostrador_loop
     RET
 
 
