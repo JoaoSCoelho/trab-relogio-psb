@@ -1,5 +1,5 @@
 mostrador: ; mostra os minutos e os segundos ou horas e os minutos por 1s nos 4 displays 
-    ldi r18, 100    ; loop de 100 vezes
+    ldi r18, 83    ; loop de 100 vezes
 
 mostrador_loop:
     rcall extrator ; seta nas variáveis horas, minutos e segundos, valores de 0-23 e 0-59 respectivamente

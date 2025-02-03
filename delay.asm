@@ -1,11 +1,15 @@
 delay:
+	rcall delay0
+	ret
+
+delay0:
 	ldi r21, 1      
 
 delay1:
-	ldi r22, 80
+	ldi r22, 162
 
 delay2:
-	ldi r23, 200
+	ldi r23, 98
 
 delay3:
 	dec r23
